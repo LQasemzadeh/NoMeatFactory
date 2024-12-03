@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Btn from "@/app/Components/Btn";
 
 const Navbar = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -28,7 +29,8 @@ const Navbar = () => {
                     : 'top-10 bg-[rgba(12,11,9,0.6)] border-b border-[rgba(12,11,9,0.6)] py-[15px]'
             }`}
         >
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 flex justify-between items-center">
+                {/* Left: Logo */}
                 <h1 className="m-0 p-0 text-[28px] leading-[1] font-light font-[poppins,sans-serif] tracking-[1px]">
                     <a href="#" className="text-green-200">
                         <span className="text-green-500">N</span>o
@@ -36,6 +38,9 @@ const Navbar = () => {
                         <span className="text-green-500">F</span>actory
                     </a>
                 </h1>
+
+                {/* Right: Button */}
+                <Btn name="Contact Us" />
             </div>
         </header>
     );
