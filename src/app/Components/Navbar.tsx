@@ -1,10 +1,19 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { FaHome } from 'react-icons/fa';
 import Btn from "@/app/Components/Btn";
 
 const Navbar = () => {
     const [isSticky, setIsSticky] = useState(false);
+
+    const navItems = [
+        { name: '', href: '#home', icon: <FaHome className="mr-1" /> }, // Home with icon only
+        { name: 'Products', href: '#products' },
+        { name: 'Production', href: '#production' },
+        { name: 'Customer Solutions', href: '#solutions' },
+        { name: 'About Us', href: '#about' },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -38,6 +47,19 @@ const Navbar = () => {
                         <span className="text-green-500">F</span>actory
                     </a>
                 </h1>
+
+                {/* Center: Navigation Links */}
+                <nav className="flex space-x-6">
+                    {navItems.map((item, index) => (
+                        <a
+                            key={index}
+                            href={item.href}
+                            className="text-green-50 flex items-center hover:text-green-400 transition-colors duration-300"
+                        >
+                            {item.icon} {item.name && <span>{item.name}</span>}
+                        </a>
+                    ))}
+                </nav>
 
                 {/* Right: Button */}
                 <Btn name="Contact Us" />
