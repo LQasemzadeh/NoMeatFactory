@@ -54,7 +54,7 @@ const Navbar = () => {
                         <a
                             key={index}
                             href={item.href}
-                            className="text-green-50 flex items-center font-[poppins,sans-serif] hover:text-green-400 transition-colors duration-300"
+                            className="text-green-50 flex items-center font-[poppins,sans-serif] text-sm hover:text-green-400 transition-colors duration-300"
                         >
                             {item.icon} {item.name && <span>{item.name}</span>}
                         </a>
