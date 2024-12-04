@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaHome } from 'react-icons/fa';
 import Btn from "@/app/Components/Btn";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 const Navbar = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -54,12 +56,13 @@ const Navbar = () => {
                         <a
                             key={index}
                             href={item.href}
-                            className="text-green-50 flex items-center font-[poppins,sans-serif] text-sm hover:text-green-400 transition-colors duration-300"
+                            className="text-green-50 flex items-center font-[poppins,sans-serif] text-sm hover:text-green-400 transition-colors duration-300 hidden lg:block"
                         >
                             {item.icon} {item.name && <span>{item.name}</span>}
                         </a>
                     ))}
                 </nav>
+                <GiHamburgerMenu className="lg:hidden z-50 text-2xl" />
 
                 {/* Right: Button */}
                 <Btn name="Contact Us" />
