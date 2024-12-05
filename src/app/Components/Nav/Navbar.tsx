@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { FaHome } from 'react-icons/fa';
-import Btn from "@/app/Components/Btn";
+import Btn from "@/app/Components/Nav/Btn";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 

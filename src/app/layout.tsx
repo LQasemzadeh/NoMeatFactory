@@ -4,8 +4,8 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "glightbox/dist/css/glightbox.css";
-import TopBar from "@/app/Components/TopBar";
-import Navbar from "@/app/Components/Navbar";
+import TopBar from "@/app/Components/Nav/TopBar";
+import Navbar from "@/app/Components/Nav/Navbar";
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
