@@ -5,7 +5,6 @@ import { FaHome } from 'react-icons/fa';
 import Btn from "@/app/Components/Nav/Btn";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-
 const Navbar = () => {
     const [isSticky, setIsSticky] = useState(false);
 
@@ -42,13 +41,13 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 {/* Left: Logo */}
-                <h1 className="m-0 p-0 text-[28px] leading-[1] font-light font-[poppins,sans-serif] tracking-[1px]">
-                    <a href="#" className="text-green-200">
-                        <span className="text-green-500 font-bold">N</span>o
-                        <span className="text-green-500 font-bold">M</span>eat
-                        <span className="text-green-500 font-bold">F</span>actory
-                    </a>
-                </h1>
+                <a href="#home" className="flex items-center">
+                    <img
+                        src="/assets/Logo/nmf-logo.svg"
+                        alt="No Meat Factory Logo"
+                        className="h-10" // Adjust the height as needed
+                    />
+                </a>
 
                 {/* Center: Navigation Links */}
                 <nav className="flex space-x-6">
