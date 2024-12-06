@@ -3,12 +3,12 @@
 import React, { useState } from 'react';
 
 const Banner = () => {
-    const [activeIndex, setActiveIndex] = useState<number>(0); // Default to the first banner
+    const [activeIndex, setActiveIndex] = useState<number>(0);
 
     const banners = [
         {
             id: 0,
-            image: '/assets/image/banner/No_Meat_Factory-Slider1.jpg',
+            image: '/assets/image/banner/No_Meat_Factory-Slider3.jpg',
             title: 'Rely on our Experience',
             description: '100+years combined experience in developing and producing plant based food solutions supporting our customers in food product development and operational excellence.',
 
@@ -22,7 +22,7 @@ const Banner = () => {
         },
         {
             id: 2,
-            image: '/assets/image/banner/No_Meat_Factory-Slider3.jpg',
+            image: '/assets/image/banner/No_Meat_Factory-Slider1.jpg',
             title: 'Plant Protein Solutions',
             description: 'Co-Manufacturing/ Food Service Solutions/ Custom Private Label Products/ Product Development',
 
@@ -38,7 +38,7 @@ const Banner = () => {
                     className={`relative cursor-pointer transition-all duration-500 ${
                         activeIndex === index ? 'flex-[4]' : 'flex-[1]'
                     } overflow-hidden rounded-lg`}
-                    style={{ minHeight: '500px' }}
+                    style={{ minHeight: '400px' }}
                 >
                     <img
                         src={banner.image}
