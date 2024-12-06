@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      flex: {
+        1: '1 1 0%',
+        4: '4 4 0%',
+      },
     },
   },
   darkMode: "class",
