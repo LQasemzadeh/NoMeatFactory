@@ -44,9 +44,9 @@ const Navbar = () => {
                 {/* Left: Logo */}
                 <h1 className="m-0 p-0 text-[28px] leading-[1] font-light font-[poppins,sans-serif] tracking-[1px]">
                     <a href="#" className="text-green-200">
-                        <span className="text-green-500">N</span>o
-                        <span className="text-green-500">M</span>eat
-                        <span className="text-green-500">F</span>actory
+                        <span className="text-green-500 font-bold">N</span>o
+                        <span className="text-green-500 font-bold">M</span>eat
+                        <span className="text-green-500 font-bold">F</span>actory
                     </a>
                 </h1>
 
