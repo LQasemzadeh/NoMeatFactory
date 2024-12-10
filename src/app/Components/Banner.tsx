@@ -46,9 +46,9 @@ const Banner = () => {
                         className="absolute inset-0 w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 text-white">
-                        <h3 className="text-xl font-bold">{banner.title}</h3>
+                        <h3 className="text-xl font-bold font-[poppins,sans-serif]">{banner.title}</h3>
                         {activeIndex === index && (
-                            <p className="text-sm mt-2">{banner.description}</p>
+                            <p className="text-sm mt-2 font-[poppins,sans-serif]">{banner.description}</p>
                         )}
                     </div>
                 </div>
