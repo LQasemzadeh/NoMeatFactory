@@ -8,12 +8,11 @@ export default {
   ],
   theme: {
     extend: {
-      flex: {
-        1: '1 1 0%',
-        4: '4 4 0%',
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
       },
     },
   },
-  darkMode: "class",
   plugins: [],
 } satisfies Config;

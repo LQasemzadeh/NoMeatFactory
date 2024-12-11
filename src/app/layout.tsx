@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "glightbox/dist/css/glightbox.css";
 import TopBar from "@/app/Components/Nav/TopBar";
 import Navbar from "@/app/Components/Nav/Navbar";
 
