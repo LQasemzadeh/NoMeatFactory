@@ -28,19 +28,15 @@ const Specialized: React.FC = () => {
                 <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {specialties.map((specialty, index) => (
                         <div key={index} className="text-center font-[poppins,sans-serif] flex flex-col items-center">
-                            <div className="w-28 h-28 mx-auto">
-                                {/* Image */}
+                            <div className="w-28 h-28 mx-auto rounded-full border-2 border-gray-300 p-2 transition-transform duration-300 hover:scale-105 hover:border-green-500 cursor-pointer">
                                 <img
                                     src={specialty.img}
                                     alt={specialty.title}
-                                    className="w-full h-full object-contain"
+                                    className="w-full h-full object-contain rounded-full"
                                 />
                             </div>
                             <h3 className="mt-4 text-xl font-bold text-gray-900">{specialty.title}</h3>
                             <p className="mt-2 text-gray-600">{specialty.description}</p>
-                            <button className=" btn">
-                                Learn More
-                            </button>
                         </div>
                     ))}
                 </div>
