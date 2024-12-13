@@ -33,7 +33,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h2 className="text-lg font-bold mb-4 text-white">Follow us</h2>
+                    <h2 className="pl-4 text-lg font-bold mb-4 text-white">Follow us</h2>
                     <ul className="flex space-x-4">
                         <li><PiLinkedinLogoBold className="text-green-500 text-3xl ml-4" /><a href=""></a></li>
                         <li><IoLogoInstagram  className="text-green-500 text-3xl" /><a href=""></a></li>
