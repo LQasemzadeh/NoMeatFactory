@@ -1,8 +1,10 @@
 'use client'
 
 import React from 'react';
-import { FaLinkedin } from "react-icons/fa";
+import { PiLinkedinLogoBold } from "react-icons/pi";
 import { IoLogoInstagram } from "react-icons/io";
+import { PiTelegramLogoBold } from "react-icons/pi";
+
 
 
 const Footer = () => {
@@ -32,9 +34,10 @@ const Footer = () => {
                 </div>
                 <div>
                     <h2 className="text-lg font-bold mb-4 text-white">Follow us</h2>
-                    <ul className="flex justify-start space-x-4">
-                        <li><FaLinkedin className="text-green-500 text-3xl ml-4" /><a href=""></a></li>
+                    <ul className="flex space-x-4">
+                        <li><PiLinkedinLogoBold className="text-green-500 text-3xl ml-4" /><a href=""></a></li>
                         <li><IoLogoInstagram  className="text-green-500 text-3xl" /><a href=""></a></li>
+                        <li><PiTelegramLogoBold className="text-green-500 text-3xl" /><a href=""></a></li>
                     </ul>
                 </div>
             </div>
