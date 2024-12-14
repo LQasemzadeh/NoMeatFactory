@@ -18,12 +18,12 @@ const AboutUs: React.FC = () => {
                 </div>
 
                 {/* Text Section */}
-                <div className="mt-8 md:mt-0 md:ml-8 md:flex-1">
-                    <blockquote className="text-base leading-relaxed font-[poppins,sans-serif] text-gray-900">
+                <div className="mt-8 md:mt-0 md:ml-8 md:flex-1 font-[poppins,sans-serif]">
+                    <blockquote className="text-base leading-relaxed text-gray-900">
                         With our extensive expertise in plant-based foods, we’re dedicated to crafting winning products that offer unique flavors and textures, serving as top-notch plant-based alternatives. Our products offer outstanding nutritional value, extended shelf life, and full compliance with all food safety regulations.
                     </blockquote>
                     <div className="mt-6">
-                        <button className="btn font-[poppins,sans-serif]">
+                        <button className="bg-green-600 text-white text-sm uppercase rounded-full py-2 px-4 shadow-md hover:bg-green-700 transition-all">
                             Learn More
                         </button>
                     </div>
