@@ -2,10 +2,11 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 font-[poppins,sans-serif]">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-16 font-[poppins,sans-serif]">
             <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-md">
                 <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Get in touch</h2>
-                <form>
+                <p className="text-gray-600 text-sm">Interested in discovering how a partnership with No Meat Factory can elevate your offerings?</p>
+                <form className="mt-6">
                     <div className="flex flex-col md:flex-row md:gap-4 mb-4">
                         <div className="w-full md:w-1/2">
                             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
