@@ -35,21 +35,52 @@ const Banner = () => {
                 <div
                     key={banner.id}
                     onClick={() => setActiveIndex(index)}
-                    className={`relative cursor-pointer transition-all duration-500 ease-in-out ${
+                    className={`relative cursor-pointer transition-all duration-700 ease-in-out ${
                         activeIndex === index ? 'flex-[4]' : 'flex-[1]'
                     } overflow-hidden rounded-lg`}
                     style={{ minHeight: activeIndex === index ? '400px' : '200px' }}
                 >
+                    {/* Image */}
                     <img
                         src={banner.image}
                         alt={banner.title}
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700"
+                        style={{
+                            transform: activeIndex === index ? 'scale(1)' : 'scale(1.1)',
+                        }}
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 text-white">
-                        <h3 className="text-xl font-bold font-[poppins,sans-serif]">{banner.title}</h3>
+
+                    {/* Overlay */}
+                    <div
+                        className={`absolute inset-0 transition-colors duration-500 ${
+                            activeIndex === index
+                                ? 'bg-black bg-opacity-0'
+                                : 'bg-black bg-opacity-50'
+                        } flex flex-col justify-end`}
+                    >
+                        {/* Mask */}
                         {activeIndex === index && (
-                            <p className="text-sm mt-2 font-[poppins,sans-serif]">{banner.description}</p>
+                            <div
+                                className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"
+                                style={{
+                                    zIndex: 1, // Ensure mask is under text
+                                    pointerEvents: 'none',
+                                }}
+                            ></div>
                         )}
+
+                        {/* Text */}
+                        <div
+                            className="relative z-10 p-4 text-white"
+                            style={{
+                                backgroundColor: activeIndex === index ? 'rgba(24,24,24,0.6)' : 'transparent',
+                            }}
+                        >
+                            <h3 className="text-xl font-bold font-[poppins,sans-serif]">{banner.title}</h3>
+                            {activeIndex === index && (
+                                <p className="text-sm mt-2 font-[poppins,sans-serif]">{banner.description}</p>
+                            )}
+                        </div>
                     </div>
                 </div>
             ))}

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 
 const Contact = () => {
@@ -61,10 +63,14 @@ const Contact = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-green-600 text-white font-semibold text-sm uppercase rounded-full py-2 px-4 shadow-md hover:bg-green-700 transition-all"
+                        className="w-full text-white font-semibold text-sm uppercase rounded-full py-2 px-4 shadow-md transition-all"
+                        style={{backgroundColor: '#014450'}}
+                        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#00303a')}
+                        onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#014450')}
                     >
                         Let's Talk!
                     </button>
+
                 </form>
             </div>
         </div>

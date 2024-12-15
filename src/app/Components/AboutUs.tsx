@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
                         <button
                             className="text-white font-[poppins,sans-serif] text-sm rounded-full py-2 px-4 shadow-md transition-all"
                             style={{backgroundColor: '#014450'}}
-                            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#00222A')}
+                            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#00303a')}
                             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#014450')}
                         >
                             Learn More
