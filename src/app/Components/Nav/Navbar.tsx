@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { FaHome } from 'react-icons/fa';
-import Btn from "@/app/Components/Nav/Btn";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
@@ -35,8 +34,8 @@ const Navbar = () => {
         <header
             className={`fixed left-0 w-full z-[997] transition-all duration-500 ${
                 isSticky
-                    ? 'top-0 bg-[rgba(0,0,0,0.85)] border-b border-[rgba(37,51,42)] py-[15px]'
-                    : 'top-10 bg-[rgba(12,11,9,0.6)] border-b border-[rgba(12,11,9,0.6)] py-[15px]'
+                    ? 'top-0 bg-[rgba(255,255,255,0.85)] border-b border-[rgba(200,200,200,0.85)] py-[15px]'
+                    : 'top-10 bg-[rgba(255,255,255,0.6)] border-b border-[rgba(220,220,220,0.6)] py-[15px]'
             }`}
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
@@ -45,7 +44,7 @@ const Navbar = () => {
                     <img
                         src="/assets/Logo/nmf-logo.svg"
                         alt="No Meat Factory Logo"
-                        className="h-10" // Adjust the height as needed
+                        className="h-10"
                     />
                 </a>
 
@@ -55,16 +54,23 @@ const Navbar = () => {
                         <a
                             key={index}
                             href={item.href}
-                            className="text-green-50 flex items-center font-[poppins,sans-serif] text-sm hover:text-green-400 transition-colors duration-300 hidden lg:block"
+                            className="text-gray-800 flex items-center font-[poppins,sans-serif] text-sm hover:text-gray-600 transition-colors duration-300 hidden lg:block"
                         >
                             {item.icon} {item.name && <span>{item.name}</span>}
                         </a>
                     ))}
                 </nav>
-                <GiHamburgerMenu className="lg:hidden z-50 text-2xl" />
+                <GiHamburgerMenu className="lg:hidden z-50 text-2xl"/>
 
                 {/* Right: Button */}
-                <Btn name="Contact Us" />
+                <button
+                    className="text-white font-[poppins,sans-serif] text-sm rounded-full py-2 px-4 shadow-md transition-all"
+                    style={{backgroundColor: '#014450'}}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#00222A')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#014450')}
+                >
+                    Learn More
+                </button>
             </div>
         </header>
     );

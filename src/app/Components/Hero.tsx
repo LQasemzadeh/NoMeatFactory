@@ -6,7 +6,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
-
 const Hero: React.FC = () => {
     const videoSrc = '/assets/image/hero/1726170362414.mov';
 
@@ -28,6 +27,7 @@ const Hero: React.FC = () => {
                 className="w-full h-full"
             >
                 <SwiperSlide className="relative w-full h-full">
+                    <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                     <video
                         className="w-full h-full object-cover"
                         src={videoSrc}
@@ -37,7 +37,6 @@ const Hero: React.FC = () => {
                     ></video>
                 </SwiperSlide>
             </Swiper>
-
         </section>
     );
 };

@@ -23,7 +23,12 @@ const AboutUs: React.FC = () => {
                         With our extensive expertise in plant-based foods, we’re dedicated to crafting winning products that offer unique flavors and textures, serving as top-notch plant-based alternatives. Our products offer outstanding nutritional value, extended shelf life, and full compliance with all food safety regulations.
                     </blockquote>
                     <div className="mt-6">
-                        <button className="bg-green-600 text-white text-sm uppercase rounded-full py-2 px-4 shadow-md hover:bg-green-700 transition-all">
+                        <button
+                            className="text-white font-[poppins,sans-serif] text-sm rounded-full py-2 px-4 shadow-md transition-all"
+                            style={{backgroundColor: '#014450'}}
+                            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#00222A')}
+                            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#014450')}
+                        >
                             Learn More
                         </button>
                     </div>
