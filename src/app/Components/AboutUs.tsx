@@ -19,13 +19,19 @@ const AboutUs: React.FC = () => {
 
                 {/* Text Section */}
                 <div className="mt-8 md:mt-0 md:ml-8 md:flex-1 font-[poppins,sans-serif]">
+                    <h2
+                        className="text-4xl font-bold mb-4"
+                        style={{ color: '#00303a' }}
+                    >
+                        About Us
+                    </h2>
                     <blockquote className="text-base leading-relaxed text-gray-900">
                         With our extensive expertise in plant-based foods, we’re dedicated to crafting winning products that offer unique flavors and textures, serving as top-notch plant-based alternatives. Our products offer outstanding nutritional value, extended shelf life, and full compliance with all food safety regulations.
                     </blockquote>
                     <div className="mt-6">
                         <button
                             className="text-white font-[poppins,sans-serif] text-sm rounded-full py-2 px-4 shadow-md transition-all"
-                            style={{backgroundColor: '#014450'}}
+                            style={{ backgroundColor: '#014450' }}
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#00303a')}
                             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#014450')}
                         >

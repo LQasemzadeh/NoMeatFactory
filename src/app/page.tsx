@@ -15,8 +15,8 @@ export default function Home() {
   return (
 <div>
   <Hero />
-  <Banner />
   <AboutUs />
+  <Banner />
   <Specialized />
   <Adsbar />
   <Contact />

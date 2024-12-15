@@ -17,12 +17,16 @@ const Specialized: React.FC = () => {
     ];
 
     return (
-        <div className="py-16 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl font-[poppins,sans-serif]">
+        <div className="relative py-16 bg-cover bg-center" style={{ backgroundImage: `url('/assets/image/specialize/No_Meat_Factory-About_Us.jpg')` }}>
+            {/* Mask Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+
+            {/* Content */}
+            <div className="relative max-w-7xl mx-auto px-8 sm:px-14 lg:px-18">
+                <h2 className="text-start text-3xl font-extrabold sm:text-4xl font-[poppins,sans-serif]" style={{ color: '#0a8c35' }}>
                     We specialize In
                 </h2>
-                <p className="mt-4 text-center text-lg text-gray-600 font-[poppins,sans-serif]">
+                <p className="mt-4 text-start text-lg text-gray-100 font-[poppins,sans-serif]">
                     A diverse range of great-tasting, and nutritious products. With modern production facilities and advanced technologies, we offer a wide range of solutions for the production of innovative food products.
                 </p>
                 <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -35,8 +39,8 @@ const Specialized: React.FC = () => {
                                     className="w-full h-full object-contain rounded-full"
                                 />
                             </div>
-                            <h3 className="mt-4 text-xl font-bold text-gray-900">{specialty.title}</h3>
-                            <p className="mt-2 text-gray-600">{specialty.description}</p>
+                            <h3 className="mt-4 text-xl font-bold text-green-300">{specialty.title}</h3>
+                            <p className="mt-2 text-gray-100">{specialty.description}</p>
                         </div>
                     ))}
                 </div>
