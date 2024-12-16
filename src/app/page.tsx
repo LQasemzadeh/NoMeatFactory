@@ -5,6 +5,7 @@ import Specialized from "@/app/Components/Specialized";
 import Footer from "@/app/Components/Footer/Footer";
 import Adsbar from "@/app/Components/Adsbar";
 import Contact from "@/app/Components/Contact";
+import Apart from "@/app/Components/Apart";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
   <Hero />
   <AboutUs />
   <Banner />
+  <Apart />
   <Specialized />
   <Adsbar />
   <Contact />

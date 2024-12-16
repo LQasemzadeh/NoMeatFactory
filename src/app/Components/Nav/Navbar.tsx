@@ -69,7 +69,7 @@ const Navbar = () => {
                     onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#00303a')}
                     onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#014450')}
                 >
-                    Learn More
+                    Contact
                 </button>
 
             </div>

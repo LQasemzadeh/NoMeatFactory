@@ -1,42 +1,31 @@
 'use client';
 
-import React, { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import React from 'react';
 
 const Hero: React.FC = () => {
     const videoSrc = '/assets/image/hero/1726170362414.mov';
 
-    const swiperRef = useRef<any>(null);
-
-    const handleNextSlide = () => {
-        if (swiperRef.current && swiperRef.current.swiper) {
-            swiperRef.current.swiper.slideNext();
-        }
-    };
-
     return (
-        <section className="relative w-full h-screen bg-gray-100">
-            <Swiper
-                ref={swiperRef}
-                modules={[Navigation]}
-                loop={true}
-                slidesPerView={1}
-                className="w-full h-full"
-            >
-                <SwiperSlide className="relative w-full h-full">
-                    <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-                    <video
-                        className="w-full h-full object-cover"
-                        src={videoSrc}
-                        autoPlay
-                        muted
-                        loop
-                    ></video>
-                </SwiperSlide>
-            </Swiper>
+        <section className="relative w-full h-[90vh] bg-gray-100"> {/* Reduced height */}
+            {/* Background Video */}
+            <div className="absolute inset-0">
+                <video
+                    className="w-full h-full object-cover"
+                    src={videoSrc}
+                    autoPlay
+                    muted
+                    loop
+                ></video>
+                <div className="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+
+            {/* Content Overlay */}
+            <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
+                {/* Main Title */}
+                <h1 className="text-green-200 text-5xl font-bold mb-8 font-[poppins,sans-serif] shadow-lg shadow-black">
+                    No Meat Factory
+                </h1>
+            </div>
         </section>
     );
 };
