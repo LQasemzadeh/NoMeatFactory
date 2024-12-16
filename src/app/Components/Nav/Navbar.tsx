@@ -10,9 +10,9 @@ const Navbar = () => {
     const navItems = [
         { name: '', href: '#home', icon: <FaHome className="mr-1" /> }, // Home with icon only
         { name: 'Products', href: '#products' },
-        { name: 'Production', href: '#production' },
         { name: 'Customer Solutions', href: '#solutions' },
-        { name: 'About Us', href: '#about' },
+        { name: 'News', href: '#news' },
+        { name: 'About', href: '#about' },
     ];
 
     useEffect(() => {

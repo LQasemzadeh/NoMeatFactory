@@ -1,7 +1,7 @@
 import Hero from "@/app/Components/Hero";
 import AboutUs from "@/app/Components/AboutUs";
 import Banner from "@/app/Components/Banner";
-import Specialized from "@/app/Components/Specialized";
+import Products from "@/app/Components/Products";
 import Footer from "@/app/Components/Footer/Footer";
 import Adsbar from "@/app/Components/Adsbar";
 import Contact from "@/app/Components/Contact";
@@ -19,7 +19,7 @@ export default function Home() {
   <AboutUs />
   <Banner />
   <Apart />
-  <Specialized />
+  <Products />
   <Adsbar />
   <Contact />
   <Footer />
