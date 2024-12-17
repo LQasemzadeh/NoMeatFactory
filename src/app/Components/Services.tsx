@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 
@@ -16,7 +18,7 @@ const services = [
 const Services: React.FC = () => {
     return (
         <div className="container mx-auto px-8 py-24">
-            <div className="flex flex-col md:flex-row items-start gap-8">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 {/* Left Side - Title and Text */}
                 <div className="flex-1 font-[poppins,sans-serif]">
                     <h2 className="text-3xl font-bold mb-4">No Meat Factory</h2>

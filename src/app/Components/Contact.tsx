@@ -4,7 +4,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8 font-[poppins,sans-serif]">
+        <div className="flex flex-col items-center justify-center bg-gray-100 px-10 py-20 font-[poppins,sans-serif]">
             <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-4xl">
                 <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Get in touch</h2>
                 <p className="text-gray-600 text-sm text-center mb-6">
