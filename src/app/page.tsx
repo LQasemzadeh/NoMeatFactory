@@ -6,6 +6,7 @@ import Footer from "@/app/Components/Footer/Footer";
 import Adsbar from "@/app/Components/Adsbar";
 import Contact from "@/app/Components/Contact";
 import Apart from "@/app/Components/Apart";
+import Services from "@/app/Components/Services";
 
 
 
@@ -18,7 +19,7 @@ export default function Home() {
   <Hero />
   <AboutUs />
   <Banner />
-  <Apart />
+  <Services />
   <Products />
   <Adsbar />
   <Contact />

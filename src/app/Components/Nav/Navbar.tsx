@@ -11,7 +11,7 @@ const Navbar = () => {
         { name: '', href: '#home', icon: <FaHome className="mr-1" /> }, // Home with icon only
         { name: 'Products', href: '#products' },
         { name: 'Customer Solutions', href: '#solutions' },
-        { name: 'News', href: '#news' },
+        { name: 'Services', href: '#services' },
         { name: 'About', href: '#about' },
     ];
 
