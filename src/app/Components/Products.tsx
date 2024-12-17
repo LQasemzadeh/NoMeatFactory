@@ -40,17 +40,19 @@ const Products: React.FC = () => {
                     {specialties.map((specialty, index) => (
                         <div
                             key={index}
-                            className="text-center font-[poppins,sans-serif] flex flex-col items-center"
+                            className="group text-center font-[poppins,sans-serif] flex flex-col items-center cursor-pointer"
                         >
-                            <div className="w-28 h-28 mx-auto rounded-full border-2 border-gray-300 p-2 transition-transform duration-300 hover:scale-105 hover:border-green-500 cursor-pointer">
+                            {/* Image Container */}
+                            <div className="w-28 h-28 mx-auto rounded-full border-2 border-gray-300 p-2 transition-transform duration-300 group-hover:scale-105 group-hover:border-green-500">
                                 <img
                                     src={specialty.img}
                                     alt={specialty.title}
                                     className="w-full h-full object-contain rounded-full"
                                 />
                             </div>
+                            {/* Title */}
                             <h3
-                                className="mt-4 text-lg font-semibold text-green-300 cursor-pointer transition-colors duration-300 hover:text-green-500 hover:underline"
+                                className="mt-4 text-md font-semibold text-green-300 transition-colors duration-300 group-hover:text-green-500 group-hover:underline"
                             >
                                 {specialty.title}
                             </h3>
