@@ -72,11 +72,11 @@ const Contact = () => {
                         <button
                             type="submit"
                             className="w-full text-white font-semibold text-sm uppercase rounded-full py-2 px-4 shadow-md transition-all"
-                            style={{ backgroundColor: '#014450' }}
+                            style={{backgroundColor: '#014450'}}
                             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#00303a')}
                             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#014450')}
                         >
-                            Let's Talk!
+                            {"Let's Talk!"}
                         </button>
                     </div>
                 </form>
