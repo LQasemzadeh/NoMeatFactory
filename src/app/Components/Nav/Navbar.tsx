@@ -53,7 +53,7 @@ const Navbar = () => {
                         <a
                             key={index}
                             href={item.href}
-                            className="text-gray-800 flex items-center font-semibold font-[poppins,sans-serif] text-lg hover:text-green-800 transition-colors duration-300"
+                            className="text-gray-800 flex items-center font-semibold font-[poppins,sans-serif] text-sm hover:text-green-800 transition-colors duration-300"
                         >
                             {item.icon} {item.name}
                         </a>
@@ -98,7 +98,7 @@ const Navbar = () => {
                             <a
                                 key={index}
                                 href={item.href}
-                                className="text-gray-800 text-lg font-semibold hover:text-green-700 flex items-center"
+                                className="text-gray-800 text-xl font-semibold hover:text-green-700 flex items-center"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.icon && <span className="mr-2">{item.icon}</span>} {item.name}
