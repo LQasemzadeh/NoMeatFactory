@@ -22,7 +22,7 @@ const Services: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 {/* Left Side - Title and Text */}
                 <div className="flex-1 font-[poppins,sans-serif]">
-                    <h2 className="text-3xl font-bold mb-4" style={{ color: '#00303a' }}>No Meat Factory</h2>
+                    <h2 className="text-3xl font-bold mb-4" style={{ color: '#00303a' }}>Services</h2>
                     <p className="text-gray-600">
                         No Meat Factory has all the services required to support your needs.
                     </p>
