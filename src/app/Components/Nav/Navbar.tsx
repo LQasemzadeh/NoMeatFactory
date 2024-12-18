@@ -98,7 +98,7 @@ const Navbar = () => {
                             <a
                                 key={index}
                                 href={item.href}
-                                className="text-gray-800 text-2xl font-semibold hover:text-green-700 flex items-center"
+                                className="text-gray-800 text-md font-semibold hover:text-green-700 flex items-center"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.icon && <span className="mr-2">{item.icon}</span>} {item.name}
