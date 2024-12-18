@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const AboutUs: React.FC = () => {
     return (
@@ -14,9 +15,11 @@ const AboutUs: React.FC = () => {
 
                     {/* Image Section */}
                     <div className="relative w-full md:w-1/2 flex-shrink-0 z-10">
-                        <img
+                        <Image
                             src="/assets/image/about/No_Meat_Factory-OurVision-Teaser.jpg"
                             alt="No Meat Factory"
+                            width={500} // Replace with actual width
+                            height={384} // Replace with actual height
                             className="h-80 w-full object-cover rounded-lg shadow-lg md:h-96"
                         />
                     </div>

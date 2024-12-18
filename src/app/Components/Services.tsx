@@ -1,6 +1,7 @@
-'use client'
+'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { FiChevronRight } from 'react-icons/fi';
 
 const services = [
@@ -31,10 +32,13 @@ const Services: React.FC = () => {
                 <div className="flex-[2] grid grid-cols-1 md:grid-cols-3 gap-6">
                     {services.map((service, index) => (
                         <div key={index} className="relative group cursor-pointer">
-                            <img
+                            <Image
                                 src={service.image}
                                 alt={`Service ${index + 1}`}
-                                className="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 transform group-hover:scale-105"
+                                layout="responsive"
+                                width={400}
+                                height={256}
+                                className="rounded-lg shadow-md transition-transform duration-300 transform group-hover:scale-105"
                             />
                             <div className="absolute bottom-4 right-4 bg-white p-2 rounded-full shadow-md group-hover:bg-gray-200 transition">
                                 <FiChevronRight className="text-black text-2xl" />

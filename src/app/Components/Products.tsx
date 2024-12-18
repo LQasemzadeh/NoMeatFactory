@@ -1,6 +1,7 @@
-'use client'
+'use client';
 
 import React from "react";
+import Image from "next/image";
 
 interface Specialty {
     img: string;
@@ -44,9 +45,11 @@ const Products: React.FC = () => {
                         >
                             {/* Image Container */}
                             <div className="w-28 h-28 mx-auto rounded-full border-2 border-gray-300 p-2 transition-transform duration-300 group-hover:scale-105 group-hover:border-green-500">
-                                <img
+                                <Image
                                     src={specialty.img}
                                     alt={specialty.title}
+                                    width={100} // Specify the appropriate dimensions for optimization
+                                    height={100}
                                     className="w-full h-full object-contain rounded-full"
                                 />
                             </div>

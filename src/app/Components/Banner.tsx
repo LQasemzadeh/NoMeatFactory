@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Banner = () => {
     const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -50,13 +51,15 @@ const Banner = () => {
                         style={{ minHeight: activeIndex === index ? '400px' : '200px' }}
                     >
                         {/* Image */}
-                        <img
+                        <Image
                             src={banner.image}
                             alt={banner.title}
-                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700"
-                            style={{
-                                transform: activeIndex === index ? 'scale(1)' : 'scale(1.1)',
-                            }}
+                            layout="fill"
+                            objectFit="cover"
+                            priority={activeIndex === index} // Ensures image optimization for active item
+                            className={`transition-transform duration-700 ${
+                                activeIndex === index ? 'scale-100' : 'scale-110'
+                            }`}
                         />
 
                         {/* Overlay */}

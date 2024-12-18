@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const Apart: React.FC = () => {
     return (
@@ -15,7 +16,7 @@ const Apart: React.FC = () => {
                         What sets us apart
                     </h2>
                     <blockquote className="text-base leading-relaxed text-gray-900">
-                        As frontrunners in the plant-based industry, we stand for a professional, thorough and positive way of working. It is also our believe that a leading role such as ours comes with taking responsibility and being utmost transparent.
+                        As frontrunners in the plant-based industry, we stand for a professional, thorough and positive way of working. It is also our belief that a leading role such as ours comes with taking responsibility and being utmost transparent.
                     </blockquote>
                     <div className="mt-6">
                         <button
@@ -32,9 +33,11 @@ const Apart: React.FC = () => {
                 {/* Image Section */}
                 <div className="relative w-full md:w-1/2 flex-shrink-0">
                     <div className="relative">
-                        <img
+                        <Image
                             src="/assets/image/apart/No_Meat_Factory-what-sets-us-apart.jpg"
                             alt="No Meat Factory"
+                            width={500} // Replace with the actual image width
+                            height={384} // Replace with the actual image height
                             className="h-80 w-full object-cover rounded-lg shadow-lg md:h-96"
                         />
                     </div>

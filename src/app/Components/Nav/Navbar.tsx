@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { FaHome } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
@@ -30,17 +31,19 @@ const Navbar = () => {
         <header
             className={`fixed left-0 w-full z-[997] transition-all duration-500 ${
                 isSticky
-                    ? 'top-0 bg-[rgba(255,255,255,0.85)] border-b border-[rgba(200,200,200,0.85)] py-[15px] shadow-lg'
-                    : 'top-10 bg-[rgba(255,255,255,0.6)] border-b border-[rgba(220,220,220,0.6)] py-[15px] shadow-lg'
+                    ? 'top-0 bg-[rgba(255,255,255,0.85)] border-b border-[rgba(200,200,200,0.85)] py-[6px] shadow-lg'
+                    : 'top-10 bg-[rgba(255,255,255,0.6)] border-b border-[rgba(220,220,220,0.6)] py-[6px] shadow-lg'
             }`}
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 {/* Logo */}
                 <a href="#home" className="flex items-center">
-                    <img
+                    <Image
                         src="/assets/Logo/nmf-logo.svg"
                         alt="No Meat Factory Logo"
-                        className="h-10"
+                        width={85}
+                        height={40}
+                        priority
                     />
                 </a>
 
@@ -78,10 +81,11 @@ const Navbar = () => {
                     <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-start space-y-6 pt-12 font-[poppins,sans-serif]">
                         {/* Top Section */}
                         <div className="absolute top-8 left-6">
-                            <img
+                            <Image
                                 src="/assets/Logo/nmf-logo.svg"
                                 alt="No Meat Factory Logo"
-                                className="h-8"
+                                width={60}
+                                height={40}
                             />
                         </div>
                         <IoMdClose
